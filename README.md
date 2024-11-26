@@ -10,7 +10,7 @@ You can schedule updates to run daily and install Plex Pass beta releases if you
 In the old days, this used to be a bit of a chore. But no more!
 
 ```
-bash -c "$(wget -qO - https://raw.githubusercontent.com/mrworf/plexupdate/master/extras/installer.sh)"
+bash -c "$(wget -qO - https://raw.githubusercontent.com/lj020326/plexupdate/refs/heads/main/extras/installer.sh)"
 ```
 
 will automatically install the tool as well as any dependencies. This has been tested on Ubuntu, Fedora and CentOS but should, for the most part, work on any modern Linux distribution.
