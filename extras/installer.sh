@@ -319,9 +319,9 @@ if [ $EUID -ne 0 ]; then
 	echo
 	echo "This script needs to install files in system locations and will ask for sudo/root permissions now"
 	sudo -v || abort "Root permissions are required for setup, cannot continue"
-elif [ ! -z "$SUDO_USER" ]; then
-	echo
-	abort "This script will ask for sudo as necessary, but you should not run it as sudo. Please try again."
+#elif [ ! -z "$SUDO_USER" ]; then
+#	echo
+#	abort "This script will ask for sudo as necessary, but you should not run it as sudo. Please try again."
 fi
 
 for req in wget git sudo; do
