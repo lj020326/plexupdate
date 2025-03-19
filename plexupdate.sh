@@ -53,7 +53,7 @@ AUTODELETE=no
 AUTOUPDATE=no
 AUTOSTART=no
 ARCH=$(uname -m)
-# manual fix for mismatch between Plex arch values and uname -m values
+# patch for Raspberry Pi reporting as armv7l, whereas Plex only offers armv7neon
 [ "$ARCH" = "armv7l" ] && ARCH="armv7neon"
 [ "$ARCH" = "i686" ] && ARCH="x86"
 BUILD="linux-$ARCH"
